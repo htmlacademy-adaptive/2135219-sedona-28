@@ -1,140 +1,174 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
     <title>БЭМ Седона/Каталог</title>
-</head>
+  </head>
 
-<body>
-
+  <body class="page__body">
     <header class="main-header">
-        <a class="main-header__logo">
-            <img class="main-header__logo-img" src="index.html" width="185" height="96" alt="Логотип сайта Седона">
-        </a>
-        <nav class="main-nav">
-            <button class="main-nav__toggle" type="button"> <span class="visually-hidden">Открыть меню</span></button>
-        </nav>
-        <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-                <li class="site-list__item site-list__item">
-                    <a href="#">Главная
-                    </a>
-                </li>
-                <li class="site-list__item site-list__item--current">
-                    <a href="#">Фото и видео
-                    </a>
-                </li>
-                <li class="site-list__item site-list__item">
-                    <a href="#">Форма отзыва
-                    </a>
-                </li>
-                <li class="site-list__item site-list__item">
-                    <a href="#">Html Academy
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <ul class="site-list">
+        <li class="site-list__item site-list__item--current">
+          <a class="site-list__link" href="#">Главная </a>
+        </li>
+        <li class="site-list__item site-list__item">
+          <a class="site-list__link" href="#">Фото и видео </a>
+        </li>
+        <li class="site-list__item site-list__item">
+          <a class="site-list__link" href="#">Форма отзыва </a>
+        </li>
+        <li class="site-list__item site-list__item">
+          <a class="site-list__link" href="#">Html Academy </a>
+        </li>
+      </ul>
+      <a class="main-header__logo">
+        <img
+          class="main-header__logo-img"
+          src="./img/logo_sedona.svg"
+          width="185"
+          height="96"
+          alt="Логотип сайта Седона"
+        />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </nav>
     </header>
 
     <main class="main-container">
+      <section class="hero">
+        <div class="hero__wrapper">
+          <h1 class="visually-hidden">Сайт городка Седона</h1>
+          <img
+            class="hero__img"
+            src="#"
+            width=""
+            height=""
+            alt="Обложка Sedona"
+          />
+        </div>
+      </section>
 
-        <section class="hero">
-            <div class="hero__wrapper">
-                <h1 class="visually-hidden">Сайт городка Седона</h1>
-                <img class="hero__img" src="#" width="" height="" alt="Обложка Sedona">
-            </div>
-        </section>
+      <section class="photo-gallery">
+        <div class="photo-gallery__wrapper">
+          <h2 class="photo-gallery__header">Фото и видео</h2>
+          <p class="photo-gallery__text">
+            Не можете решиться на путешествие из-за курса? Фотографии помогут
+            вам забыть о политике и экономике.
+          </p>
+          <ul class="photo-gallery__list">
+            <li class="photo-gallery__item">
+              <a class="photo-gallery__link">
+                <img
+                  class="photo-gallery__images"
+                  src="./img/sunset-road-mobile.jpg"
+                  width="280"
+                  height="280"
+                  alt="Закат на фоне красивой дороги"
+                />
+              </a>
+              <h3 class="photo-gallery__title">Неродные просторы</h3>
+              <p class="photo-gallery__photo-author">Автор фото: Борис</p>
+              <p class="photo-gallery__sum-like">1350</p>
+            </li>
 
-        <section class="photo-gallery">
-            <div class="photo-gallery__wrapper">
-                <h2 class="photo-gallery__header">Фото и видео</h2>
-                <p class="photo-gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
-                    забыть о
-                    политике и экономике.</p>
-                <ul class="photo-gallery__list">
-                    <li class="photo-gallery__item">
-                        <a class="photo-gallery__link">
-                            <img class="photo-gallery__images" src="#" width="" height=""
-                                alt="Закат на фоне красивой дороги">
-                        </a>
-                        <h3 class="photo-gallery__title">Неродные просторы</h3>
-                        <p class="photo-gallery__photo-author">Автор фото: Борис</p>
-                        <p class="photo-gallery__sum-like">1350</p>
-                    </li>
+            <li class="photo-gallery__item">
+              <a class="photo-gallery__link">
+                <img
+                  class="photo-gallery__images"
+                  src="./img/mountain-cactus-mobile.jpg"
+                  width="280"
+                  height="280"
+                  alt="Кактусы на фоне красных гор"
+                />
+              </a>
+              <h3 class="photo-gallery__title">Местная растительность</h3>
+              <p class="photo-gallery__photo-author">Автор фото: Сергей</p>
+              <p class="photo-gallery__sum-like">143</p>
+            </li>
+            <li class="photo-gallery__item">
+              <a class="photo-gallery__link">
+                <img
+                  class="photo-gallery__images"
+                  src="./img/railway-forest-mobile.jpg"
+                  width="280"
+                  height="280"
+                  alt="Вид с верху на извилистую дорогу и хвойный лес"
+                />
+              </a>
+              <h3 class="photo-gallery__title">Дорога на север</h3>
+              <p class="photo-gallery__photo-author">Автор фото: Петр</p>
+              <p class="photo-gallery__sum-like">96</p>
+            </li>
+            <li class="photo-gallery__item">
+              <a class="photo-gallery__link">
+                <img
+                  class="photo-gallery__images"
+                  src="./img/red-rock-mobile.jpg"
+                  width="280"
+                  height="280"
+                  alt="Мост Дьявола"
+                />
+              </a>
+              <h3 class="photo-gallery__title">Мост Дьявола</h3>
+              <p class="photo-gallery__photo-author">Автор фото: Антон</p>
+              <p class="photo-gallery__sum-like">254</p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-                    <li class="photo-gallery__item">
-                        <a class="photo-gallery__link">
-                            <img class="photo-gallery__images" src="#" width="" height=""
-                                alt="Кактусы на фоне красных гор">
-                        </a>
-                        <h3 class="photo-gallery__title">Местная растительность</h3>
-                        <p class="photo-gallery__photo-author">Автор фото: Сергей</p>
-                        <p class="photo-gallery__sum-like">143</p>
-                    </li>
-                    <li class="photo-gallery__item">
-                        <a class="photo-gallery__link">
-                            <img class="photo-gallery__images" src="#" width="" height=""
-                                alt="Вид с верху на извилистую дорогу и хвойный лес">
-                        </a>
-                        <h3 class="photo-gallery__title">Дорога на север</h3>
-                        <p class="photo-gallery__photo-author">Автор фото: Петр</p>
-                        <p class="photo-gallery__sum-like">96</p>
-                    </li>
-                    <li class="photo-gallery__item">
-                        <a class="photo-gallery__link">
-                            <img class="photo-gallery__images" src="#" width="" height="" alt="Мост Дьявола">
-                        </a>
-                        <h3 class="photo-gallery__title">Мост Дьявола</h3>
-                        <p class="photo-gallery__photo-author">Автор фото: Антон</p>
-                        <p class="photo-gallery__sum-like">254</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="promo-block">
-            <div class="promo-block__wrapper">
-                <h2 class="promo-block__header">Все еще сомневаетесь</h2>
-                <p class="promo-block__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-                    очередной раз!</p>
-                <div class="promo-video">
-
-                </div>
-            </div>
-
-        </section>
-        <footer class="main-footer">
-            <div class="main-footer__wrapper">
-                <div class="main-footer__contacts contacts">
-                    <span class="main-footer__contacts-hashtag">#visitsedona</span>
-                  </div>
-                <div class="main-footer__social social">
-                    <ul class="social__list">
-                        <li class="social__item">
-                            <a class="button social__button" href="#"><span class="visually-hidden">Вконтакте</span>
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="button social__button" href="#"><span class="visually-hidden">Телеграм</span>
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="button social__button" href="#"><span class="visually-hidden">Ютуб</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="main-footer__logo">
-                    <a class="main-footer__logo-academy">
-                        <img class="main-footer__logo-academy-img" src="#" href="#" alt="Логотип Академии"><span class="main-footer__logo-academy-text"> Разработано</span>
-                    </a>
-                </div>
-            </div>
-        </footer>
+      <section class="promo-block-catalog">
+        <div class="promo-block-catalog__wrapper">
+          <h2 class="promo-block-catalog__header">Все еще сомневаетесь</h2>
+          <p class="promo-block-catalog__text">
+            Смотрите видеопрезентацию и скорее за билетами, пока они не
+            подорожали в очередной раз!
+          </p>
+          <div class="promo-video"></div>
+        </div>
+      </section>
+      <footer class="main-footer">
+        <div class="main-footer__wrapper">
+          <div class="main-footer__contacts contacts">
+            <span class="main-footer__contacts-hashtag">#visitsedona</span>
+          </div>
+          <div class="main-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="button social__button" href="#"
+                  ><span class="visually-hidden">Вконтакте</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="button social__button" href="#"
+                  ><span class="visually-hidden">Телеграм</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="button social__button" href="#"
+                  ><span class="visually-hidden">Ютуб</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__logo">
+            <a class="main-footer__logo-academy">
+              <img
+                class="main-footer__logo-academy-img"
+                src="./img/logo-footer-academy.svg"
+                href="#"
+                alt="Логотип Академии"
+              /><span class="main-footer__logo-academy-text"> Разработано</span>
+            </a>
+          </div>
+        </div>
+      </footer>
     </main>
-</body>
-
+  </body>
 </html>
