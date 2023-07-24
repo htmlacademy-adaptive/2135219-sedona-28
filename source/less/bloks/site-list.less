@@ -2,14 +2,46 @@
   background-color: #81b3d2;
   color: #ffffff;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+  }
 }
 
 .site-list__link {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 18px;
+  line-height: 26px;
   text-align: center;
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: #000000;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+}
+
+.site-list__link--current {
+  @media (min-width: @tablet-width) {
+    color: #766357;
+  }
 }

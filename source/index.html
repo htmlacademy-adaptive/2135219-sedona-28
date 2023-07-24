@@ -13,7 +13,7 @@
   <header class="main-header">
       <ul class="site-list">
         <li class="site-list__item site-list__item--current">
-          <a class="site-list__link" href="#">Главная
+          <a class="site-list__link site-list__link--current" href="#">Главная
           </a>
         </li>
         <li class="site-list__item site-list__item">
@@ -41,7 +41,7 @@
   <main class="main-container">
     <section class="hero">
       <h1 class="visually-hidden">Сайт городка Седона</h1>
-      <img class="hero__img" src="../images/mobile/text-index.svg.svg" width="282" height="214" alt="Приветствие от Седоны">
+      <img class="hero__img" src="./img/text-index-mobile.svg" width="282" height="214" alt="Приветствие от Седоны">
     </section>
 
     <section class="welcome">
@@ -61,7 +61,12 @@
             <p class="advantages__discription">СЕДОНА не аттракцион для туристов, там течет своя жизнь</p>
           </li>
           <li class="advantages__image">
-            <img src="./img/photo-city.jpg" width="520" height="260" alt="Домик на фоне гор в Седоне">
+            <picture>
+              <source srcset="./img/photo-city.jpg" type="image/jpeg" media="(max-width: 320px)">
+              <source srcset="./img/photo-city-tablet.jpg" type="image/jpeg" media="(min-width: 768px)">
+              <source srcset="./img/photo-city-desktop.jpg" type="image/jpeg" media="(min-width: 1200px)">
+            <img src="./img/photo-city.jpg" alt="Домик на фоне гор в Седоне">
+          </picture>
           </li>
           <li class="advantages__item advantages__item--white advantages__item--house">
             <h3 class="advantages__title">Жилье</h3>
@@ -81,21 +86,26 @@
             <p class="advantages__discription advantages__discription-blue">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </li>
           <li class="advantages__image">
-            <img src="./img/photo-bridge.jpg" width="520" height="260" alt="Мост дьявола">
+            <picture>
+              <source srcset="./img/photo-bridge.jpg" type="image/jpeg" media="(max-width: 320px)">
+              <source srcset="./img/photo-bridge-tablet.jpg" type="image/jpeg" media="(min-width: 768px)">
+              <source srcset="./img/photo-bridge-tablet.jpg" type="image/jpeg" media="(min-width: 1200px)">
+            <img src="./img/photo-bridge.jpg" alt="Мост дьявола">
+          </picture>
           </li>
           <li class="advantages__item advantages__item-grey">
             <h3 class="advantages__title">Небольшая площадь</h3>
-            <div class="advantages__number">— №3 —</div>
-            <p class="advantages__discription">Все интересные места находятся очень близко</p>
+            <div class="advantages__number advantages__number-grey">— №3 —</div>
+            <p class="advantages__discription advantages__discription-grey">Все интересные места находятся очень близко</p>
           </li>
           <li class="advantages__item advantages__item-grey">
             <h3 class="advantages__title">Красивая дорога</h3>
-            <div class="advantages__number">— №4 —</div>
-            <p class="advantages__discription">Ехать в Седону из Лас-Вегаса совсем НЕ СКУЧНО!</p>
+            <div class="advantages__number advantages__number-grey">— №4 —</div>
+            <p class="advantages__discription advantages__discription-grey">Ехать в Седону из Лас-Вегаса совсем НЕ СКУЧНО!</p>
           </li>
           <li class="advantages__item advantages__item-grey">
             <h3 class="advantages__title">Мало туристов</h3>
-            <div class="advantages__number">— №5 —</div>
+            <div class="advantages__number advantages__number-grey">— №5 —</div>
             <p class="advantages__discription advantages__discription-grey">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>

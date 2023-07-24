@@ -1,20 +1,36 @@
 .promo-block {
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 166px 55px 166px;
+  }
 }
 
 .promo-block__header {
   color: #000000;
   text-transform: uppercase;
   text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .promo-block__discription {
   color: @text-description-black;
   text-transform: uppercase;
   text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+  }
 }
 
 .promo-block__button {
+  display: inline-block;
   font-family: inherit;
   font-weight: 700;
   font-size: 20px;
@@ -25,4 +41,10 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+    height: 58px;
+    padding: 14px 121px 17px 121px;
+  }
 }

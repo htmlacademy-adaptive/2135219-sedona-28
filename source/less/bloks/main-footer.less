@@ -10,3 +10,15 @@
 .social__list {
   list-style-type: none;
 }
+
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
