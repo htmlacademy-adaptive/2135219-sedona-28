@@ -42,16 +42,14 @@
 
     <main class="main-container">
       <section class="hero">
-        <div class="hero__wrapper">
-          <h1 class="visually-hidden">Сайт городка Седона</h1>
-          <img
-            class="hero__img"
-            src=""
-            width="902"
-            height="214"
-            alt="Обложка Sedona"
-          />
-        </div>
+        <h1 class="visually-hidden">Сайт городка Седона</h1>
+        <img
+          class="hero__img"
+          src="./img/form/text-index-form.svg"
+          width="282"
+          height="214"
+          alt="Приветствие от Седоны"
+        />
       </section>
 
       <section class="photo-gallery">
@@ -63,18 +61,35 @@
           </p>
           <ul class="photo-gallery__list">
             <li class="photo-gallery__item">
-              <a class="photo-gallery__link">
-                <img
-                  class="photo-gallery__images"
-                  src="./img/sunset-road-mobile.jpg"
-                  width="280"
-                  height="280"
-                  alt="Закат на фоне красивой дороги"
+              <picture>
+                <source
+                  srcset="./img/sunset-road.jpg"
+                  type="image/jpeg"
+                  media="(max-width: 320px)"
                 />
-              </a>
-              <h3 class="photo-gallery__title">Неродные просторы</h3>
-              <p class="photo-gallery__photo-author">Автор фото: Борис</p>
-              <p class="photo-gallery__sum-like">1350</p>
+                <source
+                  srcset="./img/sunset-road-tablet.jpg"
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/sunset-road-desktop.jpg"
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <a class="photo-gallery__link">
+                  <img
+                    class="photo-gallery__images"
+                    src="./img/sunset-road-mobile.jpg"
+                    alt="Закат на фоне красивой дороги"
+                  />
+                </a>
+              </picture>
+              <div class="photo-gallery__item-information">
+                <h3 class="photo-gallery__title">Неродные просторы</h3>
+                <p class="photo-gallery__photo-author">Автор фото: Борис</p>
+                <p class="photo-gallery__sum-like">1350</p>
+              </div>
             </li>
 
             <li class="photo-gallery__item">
@@ -87,9 +102,11 @@
                   alt="Кактусы на фоне красных гор"
                 />
               </a>
-              <h3 class="photo-gallery__title">Местная растительность</h3>
-              <p class="photo-gallery__photo-author">Автор фото: Сергей</p>
-              <p class="photo-gallery__sum-like">143</p>
+              <div class="photo-gallery__item-information">
+                <h3 class="photo-gallery__title">Местная растительность</h3>
+                <p class="photo-gallery__photo-author">Автор фото: Сергей</p>
+                <p class="photo-gallery__sum-like">143</p>
+              </div>
             </li>
             <li class="photo-gallery__item">
               <a class="photo-gallery__link">
@@ -101,9 +118,11 @@
                   alt="Вид с верху на извилистую дорогу и хвойный лес"
                 />
               </a>
-              <h3 class="photo-gallery__title">Дорога на север</h3>
-              <p class="photo-gallery__photo-author">Автор фото: Петр</p>
-              <p class="photo-gallery__sum-like">96</p>
+              <div class="photo-gallery__item-information">
+                <h3 class="photo-gallery__title">Дорога на север</h3>
+                <p class="photo-gallery__photo-author">Автор фото: Петр</p>
+                <p class="photo-gallery__sum-like">96</p>
+              </div>
             </li>
             <li class="photo-gallery__item">
               <a class="photo-gallery__link">
@@ -115,9 +134,11 @@
                   alt="Мост Дьявола"
                 />
               </a>
-              <h3 class="photo-gallery__title">Мост Дьявола</h3>
-              <p class="photo-gallery__photo-author">Автор фото: Антон</p>
-              <p class="photo-gallery__sum-like">254</p>
+              <div class="photo-gallery__item-information">
+                <h3 class="photo-gallery__title">Мост Дьявола</h3>
+                <p class="photo-gallery__photo-author">Автор фото: Антон</p>
+                <p class="photo-gallery__sum-like">254</p>
+              </div>
             </li>
           </ul>
         </div>

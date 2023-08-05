@@ -5,8 +5,15 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: #ffffff;
+  }
+}
+
+.site-list__item {
+  @media (min-width: @tablet-width) {
+    width: 153px;
   }
 }
 
@@ -27,6 +34,7 @@
     font-weight: 700;
     line-height: 21px;
     text-transform: uppercase;
+    padding-top: 18px;
   }
 
   @media (min-width: @desktop-width) {

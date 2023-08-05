@@ -1,9 +1,20 @@
+.photo-gallery__item-information {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 0 0;
+  width: 280px;
+}
+
 .photo-gallery__header {
   text-align: center;
   font-weight: 700;
   line-height: 26px;
   font-size: 18px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .photo-gallery__text {
@@ -19,6 +30,8 @@
   line-height: 21px;
   font-size: 14px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .photo-gallery__photo-author {
@@ -26,6 +39,8 @@
   line-height: 21px;
   font-size: 14px;
   color: @text-description-black;
+  margin: 0;
+  padding: 0;
 }
 
 .photo-gallery__sum-like {
@@ -36,4 +51,10 @@
 
 .photo-gallery__list {
   list-style-type: none;
+  padding: 25px 20px 0 20px;
+}
+
+.photo-gallery__images img {
+  min-width: 100%;
+  display: block;
 }

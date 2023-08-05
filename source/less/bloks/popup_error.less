@@ -1,15 +1,19 @@
 .popup__title {
   font-weight: 700;
   line-height: 26px;
-  font-size: 21px;
+  font-size: 18px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .popup__description {
   font-weight: 700;
   line-height: 26px;
-  font-size: 18px;
+  font-size: 14px;
   color: @text-description-black;
   text-transform: uppercase;
   text-align: center;
