@@ -5,4 +5,19 @@
   height: 56px;
   margin: auto;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+}
+
+.main-header__logo-img {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -51px;
+    height: 96px;
+    z-index: 1;
+  }
 }

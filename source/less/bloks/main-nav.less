@@ -1,3 +1,69 @@
 .main-nav {
+  position: absolute;
   display: flex;
+}
+
+.main-nav__toggle {
+  @media (min-width: @mobile-width) {
+    position: relative;
+    top: 17px;
+    right: -105px;
+    z-index: 2;
+    display: block;
+    width: 23px;
+    height: 22px;
+    background-color: #ffffff;
+    cursor: pointer;
+    border: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  @media (min-width: @mobile-width) {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -2px;
+    width: 23px;
+    height: 4px;
+    background-color: @background-color-blue;
+    box-shadow: 0 8px 0 0 @background-color-blue,
+      0 16px 0 0 @background-color-blue;
+  }
+
+  .main-nav--closed .main-nav__toggle:hover::before {
+    background-color: fade(#b4e2fe, 30%);
+    box-shadow: 0 8px 0 0 fade(#b4e2fe, 30%), 0 16px 0 0 fade(#b4e2fe, 30%);
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 22px;
+    height: 2px;
+    background-color: @background-color-blue;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(@background-color-blue, 30%);
+  }
 }

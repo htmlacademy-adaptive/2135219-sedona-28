@@ -9,6 +9,20 @@
 
 .social__list {
   list-style-type: none;
+
+  @media (min-width: @mobile-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 30px 0;
+  }
+}
+
+.social__item {
+  @media (min-width: @mobile-width) {
+    margin-right: 6px;
+  }
 }
 
 .main-footer__wrapper {
