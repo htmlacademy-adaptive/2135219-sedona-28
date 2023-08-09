@@ -24,7 +24,7 @@
           <a class="site-list__link" href="#">Html Academy </a>
         </li>
       </ul>
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="index.html">
         <img
           class="main-header__logo-img"
           src="./img/logo_sedona.svg"
@@ -61,33 +61,37 @@
           </p>
           <ul class="photo-gallery__list">
             <li class="photo-gallery__item">
-              <picture>
-                <source
-                  srcset="./img/sunset-road.jpg"
-                  type="image/jpeg"
-                  media="(max-width: 320px)"
-                />
-                <source
-                  srcset="./img/sunset-road-tablet.jpg"
-                  type="image/jpeg"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="./img/sunset-road-desktop.jpg"
-                  type="image/jpeg"
-                  media="(min-width: 1200px)"
-                />
-                <a class="photo-gallery__link">
+              <a class="photo-gallery__link">
+                <picture>
+                  <source
+                    srcset="./img/sunset-road.jpg"
+                    type="image/jpeg"
+                    media="(max-width: 320px)"
+                  />
+                  <source
+                    srcset="./img/sunset-road-tablet.jpg"
+                    type="image/jpeg"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./img/sunset-road-desktop.jpg"
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
                   <img
                     class="photo-gallery__images"
                     src="./img/sunset-road-mobile.jpg"
                     alt="Закат на фоне красивой дороги"
                   />
-                </a>
-              </picture>
-              <div class="photo-gallery__item-information">
-                <h3 class="photo-gallery__title">Неродные просторы</h3>
-                <p class="photo-gallery__photo-author">Автор фото: Борис</p>
+                </picture>
+              </a>
+              <div
+                class="photo-gallery__item-information photo-gallery__item-main"
+              >
+                <div class="photo-gallery__item-text">
+                  <h3 class="photo-gallery__title">Неродные просторы</h3>
+                  <p class="photo-gallery__photo-author">Автор фото: Борис</p>
+                </div>
                 <p class="photo-gallery__sum-like">1350</p>
               </div>
             </li>
@@ -179,11 +183,13 @@
             </ul>
           </div>
           <div class="main-footer__logo">
-            <a class="main-footer__logo-academy">
+            <a
+              class="main-footer__logo-academy"
+              href="https://htmlacademy.ru/intensive/adaptive"
+            >
               <img
                 class="main-footer__logo-academy-img"
                 src="./img/logo-footer-academy.svg"
-                href="#"
                 alt="Логотип Академии"
               /><span class="main-footer__logo-academy-text"> Разработано</span>
             </a>
