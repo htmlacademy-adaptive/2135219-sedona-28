@@ -18,12 +18,17 @@
     background-color: #ffffff;
     margin: 0;
     padding: 0;
+    width: 100%;
   }
 }
 
 .site-list__item {
   @media (min-width: @tablet-width) {
-    width: 153px;
+    width: 20%;
+
+    &:nth-child(2) {
+      margin-right: 20%;
+    }
   }
 }
 

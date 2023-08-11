@@ -1,6 +1,10 @@
 .main-nav {
   position: absolute;
   display: flex;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
 }
 
 .main-nav__toggle {
@@ -15,6 +19,10 @@
     background-color: #ffffff;
     cursor: pointer;
     border: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
