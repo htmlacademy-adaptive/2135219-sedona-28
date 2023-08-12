@@ -14,9 +14,13 @@
   display: flex;
   flex-wrap: wrap;
 
+  @media (min-width: @mobile-width) {
+    margin: 24px 20px 39px 20px;
+  }
+
   @media (min-width: @tablet-width) {
     width: 295px;
-    margin: 0;
+    margin: 108px 28px 63px 60px;
   }
 }
 
@@ -24,9 +28,13 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: @mobile-width) {
+    margin: 24px 20px 34px 20px;
+  }
+
   @media (min-width: @tablet-width) {
     width: 295px;
-    margin: 0;
+    margin: 108px 60px 158px 28px;
   }
 }
 
@@ -43,6 +51,16 @@
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @mobile-width) {
+    width: 245px;
+    margin-left: 38px;
+    margin-right: 37px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .review-form__name {
@@ -83,6 +101,10 @@
 }
 
 .review-form__impression-block {
+  @media (min-width: @mobile-width) {
+    margin: 24px 20px 24px 20px;
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
@@ -96,6 +118,10 @@
   font-size: 18px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .review-form__impression-list {
@@ -116,12 +142,11 @@
   margin: 0;
 }
 
-// .review-form__attractions-block {
-//   @media (min-width: @tablet-width) {
-//     display: grid;
-//     grid-template-columns: repeat(2, 224px);
-//   }
-// }
+.review-form__attractions-block {
+  @media (min-width: @mobile-width) {
+    margin: 24px 20px 24px 20px;
+  }
+}
 
 .review-form__attractions-title,
 textarea {

@@ -1,23 +1,24 @@
 .main-header {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 56px;
-  margin: auto;
-  padding: 0;
+  padding: 0 0 56px 0;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
+    padding-bottom: 0;
   }
 }
 
 .main-header__logo {
+  order: 2;
+  display: block;
+  position: absolute;
+  bottom: -37px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 180px;
+
   @media (min-width: @tablet-width) {
-    display: block;
-    position: absolute;
+    bottom: auto;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
   }
 }
