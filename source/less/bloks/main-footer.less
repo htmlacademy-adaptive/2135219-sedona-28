@@ -5,40 +5,73 @@
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-top: 52px;
+  }
 }
 
 .social__list {
   list-style-type: none;
-
-  @media (min-width: @mobile-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0;
-    margin: 30px 0;
-  }
-}
-
-.social__item {
-  @media (min-width: @mobile-width) {
-    margin-right: 6px;
-  }
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0;
+  margin: 30px 0 25px 0;
 }
 
 .social__button {
+  width: 46px;
+  height: 48px;
+
   svg {
     display: block;
   }
 }
 
 .main-footer__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 33px 70px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 4px 61px;
+  }
+}
+
+.main-footer__logo-academy-text {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  margin-right: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 40px;
+  }
+}
+
+.main-footer__logo-academy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.main-footer__logo-academy-img {
+  @media (min-width: @tablet-width) {
+    margin-top: 34px;
+  }
+}
+
+.main-footer__contacts {
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -10px;
   }
 }
