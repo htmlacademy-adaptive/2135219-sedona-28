@@ -40,6 +40,7 @@
 
 .review-form-contacts__name {
   width: 222px;
+  height: 58px;
   padding: 16px;
   background: @background-color-placeholder;
   border: none;
@@ -78,11 +79,25 @@
 }
 
 .review-form__label {
+  position: relative;
   font-weight: 400;
   line-height: 21px;
   font-size: 14px;
   color: @text-description-black;
   text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.review-form__label:last-child {
+  margin-bottom: 0;
+}
+
+.link__phone-svg {
+  position: absolute;
+}
+
+.link__email-svg {
+  position: absolute;
 }
 
 .review-form-contacts__name::placeholder {
@@ -175,4 +190,44 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+// РАДИОКНОПКИ
+
+.control-input + label {
+  position: relative;
+  padding-left: 37px;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.control-input-radio + label::before {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: @text-description-black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.control-input-radio + label::after {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.review-form__impression-item {
+  margin-bottom: 16px;
 }
