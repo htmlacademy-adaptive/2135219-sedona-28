@@ -1,6 +1,7 @@
 .review-form-section {
   display: flex;
   flex-direction: column;
+  margin: 24px 20px 34px 20px;
 }
 
 .review-form-first-block {
@@ -14,10 +15,6 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media (min-width: @mobile-width) {
-    margin: 24px 20px 39px 20px;
-  }
-
   @media (min-width: @tablet-width) {
     width: 295px;
     margin: 108px 28px 63px 60px;
@@ -28,10 +25,6 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: @mobile-width) {
-    margin: 24px 20px 34px 20px;
-  }
-
   @media (min-width: @tablet-width) {
     width: 295px;
     margin: 108px 60px 158px 28px;
@@ -39,7 +32,7 @@
 }
 
 .review-form-contacts__name {
-  width: 222px;
+  width: 224px;
   height: 58px;
   padding: 16px;
   background: @background-color-placeholder;
@@ -52,12 +45,9 @@
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
-
-  @media (min-width: @mobile-width) {
-    width: 245px;
-    margin-left: 38px;
-    margin-right: 37px;
-  }
+  width: 300px;
+  height: 50px;
+  margin-top: 27px;
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
@@ -65,7 +55,7 @@
 }
 
 .review-form__name {
-  width: 248px;
+  width: 280px;
   padding: 16px;
   background: @background-color-placeholder;
   border: none;
@@ -88,9 +78,9 @@
   margin-bottom: 16px;
 }
 
-.review-form__label:last-child {
-  margin-bottom: 0;
-}
+// .review-form__label:last-child {
+//   margin-bottom: 0;
+// }
 
 .link__phone-svg {
   position: absolute;
@@ -116,10 +106,6 @@
 }
 
 .review-form__impression-block {
-  @media (min-width: @mobile-width) {
-    margin: 24px 20px 24px 20px;
-  }
-
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
@@ -154,13 +140,11 @@
   font-weight: 700;
   line-height: 26px;
   font-size: 18px;
+  padding: 0;
   margin: 0;
 }
 
 .review-form__attractions-block {
-  @media (min-width: @mobile-width) {
-    margin: 24px 20px 24px 20px;
-  }
 }
 
 .review-form__attractions-title,
@@ -196,7 +180,7 @@ textarea {
 
 .control-input + label {
   position: relative;
-  padding-left: 37px;
+  padding-left: 54px;
   font-size: 18px;
   line-height: 23px;
 }
@@ -224,10 +208,37 @@ textarea {
   background-color: #e5e5e5;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -15px;
   box-sizing: border-box;
 }
 
 .review-form__impression-item {
   margin-bottom: 16px;
+}
+
+.control-input-check + label {
+  position: relative;
+  padding-left: 37px;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.control-input-check + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -54px;
+  width: 46px;
+  height: 46px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.control-input-check + label::after {
+  content: url(../img/tick.svg);
+  position: absolute;
+  width: 22px;
+  height: 16px;
+  left: -40px;
+  top: 13px;
 }
