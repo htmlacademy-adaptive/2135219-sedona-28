@@ -21,20 +21,20 @@
 
       <!-- для демонстрации открытого меню добавить класс main-nav--opened -->
       <!-- для демонстрации закрытого меню добавить класс main-nav--closed -->
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav">
         <ul class="site-list">
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__link site-list__link--current" href="#"
-              >Главная
-            </a>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Главная </a>
           </li>
-          <li class="site-list__item site-list__item">
+          <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Фото и видео </a>
           </li>
-          <li class="site-list__item site-list__item">
-            <a class="site-list__link" href="form.html">Форма отзыва </a>
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__link site-list__link--current" href="form.html"
+              >Форма отзыва
+            </a>
           </li>
-          <li class="site-list__item site-list__item">
+          <li class="site-list__item">
             <a class="site-list__link" href="#">Html Academy </a>
           </li>
         </ul>
@@ -73,88 +73,95 @@
           <div class="review-form-first-block">
             <div class="review-form__full-name">
               <p class="review-form__title">Представьтесь:</p>
-              <label class="review-form__label" for="name"
-                >Имя<span class="footnote">*</span>:
-                <input
-                  class="review-form__name"
-                  type="text"
-                  placeholder="Пётр"
-                  required
-                />
+              <label class="review-form__label" for="name">Имя*: </label>
+              <input
+                id="name"
+                name="name"
+                class="review-form__input"
+                type="text"
+                placeholder="Пётр"
+                required
+              />
+
+              <label class="review-form__label" for="surname">Фамилия*: </label>
+              <input
+                id="surname"
+                name="surname"
+                class="review-form__input"
+                type="text"
+                placeholder="Пустота"
+                required
+              />
+
+              <label class="review-form__label" for="patronymic"
+                >Отчество*:
               </label>
-              <label class="review-form__label" for="name"
-                >Фамилия<span class="footnote">*</span>:
-                <input
-                  class="review-form__name"
-                  type="text"
-                  placeholder="Пустота"
-                  required
-                />
-              </label>
-              <label class="review-form__label" for="name"
-                >Отчество<span class="footnote">*</span>:
-                <input
-                  class="review-form__name"
-                  type="text"
-                  placeholder="Викторович"
-                />
-              </label>
+              <input
+                id="patronymic"
+                name="patronymic"
+                class="review-form__input"
+                type="text"
+                placeholder="Викторович"
+              />
             </div>
 
             <div class="review-form__contact-information">
               <p class="review-form__title">Контактная информация:</p>
-              <label class="review-form__label" for="name"
-                >Контактный телефон<span class="footnote">*</span>:
+              <label class="review-form__label" for="phone"
+                >Контактный телефон*:
+              </label>
+              <div class="review-form__icon-wrapper">
                 <input
-                  class="review-form-contacts__name"
+                  id="phone"
+                  name="phone"
+                  class="review-form__input"
                   type="tel"
                   placeholder="Введите телефон"
                   required
                 />
-                <a class="link__phone" href="#"
-                  ><span class="visually-hidden">Позвонить</span>
-                  <svg
-                    class="link__phone-svg"
-                    width="58"
-                    height="58"
-                    viewBox="0 0 58 58"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="58" height="58" fill="#E6E6E6" />
-                    <path
-                      d="M23.6 27.8C25 30.6 27.4 32.9 30.2 34.4L32.4 32.2C32.7 31.9 33.1 31.8 33.4 32C34.5 32.4 35.7 32.6 37 32.6C37.6 32.6 38 33 38 33.6V37C38 37.6 37.6 38 37 38C27.6 38 20 30.4 20 21C20 20.4 20.4 20 21 20H24.5C25.1 20 25.5 20.4 25.5 21C25.5 22.2 25.7 23.4 26.1 24.6C26.2 24.9 26.1 25.3 25.9 25.6L23.6 27.8Z"
-                      fill="#010101"
-                    />
-                  </svg>
-                </a>
+                <svg
+                  class="link__phone-svg"
+                  width="58"
+                  height="58"
+                  viewBox="0 0 58 58"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="58" height="58" fill="#E6E6E6" />
+                  <path
+                    d="M23.6 27.8C25 30.6 27.4 32.9 30.2 34.4L32.4 32.2C32.7 31.9 33.1 31.8 33.4 32C34.5 32.4 35.7 32.6 37 32.6C37.6 32.6 38 33 38 33.6V37C38 37.6 37.6 38 37 38C27.6 38 20 30.4 20 21C20 20.4 20.4 20 21 20H24.5C25.1 20 25.5 20.4 25.5 21C25.5 22.2 25.7 23.4 26.1 24.6C26.2 24.9 26.1 25.3 25.9 25.6L23.6 27.8Z"
+                    fill="#010101"
+                  />
+                </svg>
+              </div>
+
+              <label class="review-form__label" for="email"
+                >Электронная почта*:
               </label>
-              <label class="review-form__label" for="name"
-                >Электронная почта<span class="footnote">*</span>:
+              <div class="review-form__icon-wrapper">
                 <input
-                  class="review-form-contacts__name"
+                  id="email"
+                  name="email"
+                  class="review-form__input"
                   type="email"
                   placeholder="Введите e-mail"
                   required
                 />
-                <a class="link__email" href="#"
-                  ><span class="visually-hidden">Написать на email</span>
-                  <svg
-                    class="link__email-svg"
-                    width="58"
-                    height="58"
-                    viewBox="0 0 58 58"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="58" height="58" fill="#E6E6E6" />
-                    <path
-                      d="M29 31C28.7 31 28.5 30.9 28 30.7L21 27V34C21 34.5 21.5 35 22 35H36C36.5 35 37 34.5 37 34V27L30 30.7C29.5 30.9 29.3 31 29 31ZM36 23H22C21.5 23 21 23.5 21 24V24.8L29 29L37 24.8V24C37 23.5 36.5 23 36 23Z"
-                      fill="black"
-                    />
-                  </svg>
-                </a>
-              </label>
+                <svg
+                  class="link__email-svg"
+                  width="58"
+                  height="58"
+                  viewBox="0 0 58 58"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="58" height="58" fill="#E6E6E6" />
+                  <path
+                    d="M29 31C28.7 31 28.5 30.9 28 30.7L21 27V34C21 34.5 21.5 35 22 35H36C36.5 35 37 34.5 37 34V27L30 30.7C29.5 30.9 29.3 31 29 31ZM36 23H22C21.5 23 21 23.5 21 24V24.8L29 29L37 24.8V24C37 23.5 36.5 23 36 23Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
 
