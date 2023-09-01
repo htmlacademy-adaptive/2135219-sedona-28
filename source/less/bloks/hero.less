@@ -26,7 +26,7 @@
       height: 72px;
       position: absolute;
       left: 0;
-      bottom: -3px;
+      bottom: -1px;
       display: block;
       background: url(../img/white-triangle-tablet.svg) center bottom no-repeat;
     }
@@ -51,11 +51,16 @@
 .hero__small {
   padding: 50px 45px 67px 45px;
   background-position: bottom center;
+
+  @media (min-width: @tablet-width) {
+    height: 290px;
+  }
 }
 
 .hero__img {
   @media (min-width: @tablet-width) {
     width: 461px;
     height: 350px;
+    padding-bottom: 183px;
   }
 }

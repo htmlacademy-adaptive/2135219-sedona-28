@@ -5,13 +5,13 @@
 .review-form-section {
   display: flex;
   flex-direction: column;
-  padding: 12px 20px 4px 20px
+  padding: 12px 20px 4px 20px;
 }
 
 .review-form-first-block {
   @media (min-width: @tablet-width) {
     display: flex;
-    margin: 100px 60px 63px 60px;
+    margin: 0;
   }
 }
 
@@ -28,12 +28,13 @@
     left: -20px;
     top: 3px;
     position: absolute;
-    background: #E5E5E5;
+    background: #e5e5e5;
   }
 
   @media (min-width: @tablet-width) {
     width: 295px;
-    margin: 108px 28px 63px 60px;
+    top: -34px;
+    left: 41px;
   }
 }
 
@@ -51,12 +52,15 @@
     left: -20px;
     top: 23px;
     position: absolute;
-    background: #E5E5E5;
+    background: #e5e5e5;
   }
 
   @media (min-width: @tablet-width) {
     width: 295px;
-    margin: 108px 60px 158px 28px;
+    margin: -34px -33px 158px 98px;
+    padding-top: 0;
+    padding-bottom: 1px;
+    padding-right: 0;
   }
 }
 
@@ -92,12 +96,20 @@
 
 .review-form__input {
   width: 100%;
-    padding: 16px 16px;
-    background: @background-color-placeholder;
-    border: none;
-    font-family: inherit;
-    line-height: 26px;
-    margin-bottom: 16px;
+  padding: 16px 16px;
+  background: @background-color-placeholder;
+  border: none;
+  font-family: inherit;
+  line-height: 26px;
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-left: 5px;
+  }
 }
 
 .review-form__input::placeholder {
@@ -139,6 +151,11 @@
   line-height: 26px;
   font-size: 18px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .review-form__impression-block {
@@ -153,13 +170,13 @@
     left: -20px;
     top: 16px;
     position: absolute;
-    background: #E5E5E5;
+    background: #e5e5e5;
   }
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
-    margin: 60px;
+    padding-top: 15px;
   }
 }
 
@@ -184,6 +201,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 280px);
+    gap: 16px;
   }
 }
 
@@ -208,7 +226,11 @@
     left: -20px;
     top: -14px;
     position: absolute;
-    background: #E5E5E5;
+    background: #e5e5e5;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 20px;
   }
 }
 
@@ -219,6 +241,11 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    width: 380px;
+  }
 }
 
 textarea {
@@ -242,6 +269,7 @@ textarea {
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 224px);
+    gap: 32px 16px;
   }
 }
 
@@ -259,7 +287,7 @@ textarea {
     left: 0;
     top: -7px;
     position: absolute;
-    background: #E5E5E5;
+    background: #e5e5e5;
   }
 }
 
@@ -270,6 +298,10 @@ textarea {
   padding-left: 48px;
   font-size: 18px;
   line-height: 23px;
+
+  @media (min-width: @tablet-width) {
+    left: 88px;
+  }
 }
 
 .control-input-radio:checked + label::before {
@@ -285,6 +317,11 @@ textarea {
   left: 1px;
   box-sizing: border-box;
   z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    left: 3px;
+    top: 25px;
+  }
 }
 
 .control-input-radio + label::after {
@@ -299,10 +336,30 @@ textarea {
   transform: translateY(-50%);
   left: -13px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    content: "";
+    display: block;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #e5e5e5;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -13px;
+    box-sizing: border-box;
+  }
 }
 
 .review-form__impression-item {
   margin-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    content: "";
+    display: block;
+    width: 280px;
+  }
 }
 
 .control-input-check + label {
@@ -310,6 +367,12 @@ textarea {
   padding-left: 62px;
   font-size: 18px;
   line-height: 23px;
+
+  @media (min-width: @tablet-width) {
+    content: "";
+    display: block;
+    width: 280px;
+  }
 }
 
 .control-input-check + label::before {
@@ -330,9 +393,14 @@ textarea {
   width: 22px;
   height: 16px;
   left: 12px;
-    top: 1px;
+  top: 1px;
 }
 
 .review-form__attractions-item {
   margin-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 6px 0 0 49px;
+  }
 }
