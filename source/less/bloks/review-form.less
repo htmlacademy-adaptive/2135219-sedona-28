@@ -13,6 +13,11 @@
     display: flex;
     margin: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
 }
 
 .review-form__full-name {
@@ -35,6 +40,12 @@
     width: 295px;
     top: -34px;
     left: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 430px;
+    top: -32px;
+    left: -19px;
   }
 }
 
@@ -61,6 +72,19 @@
     padding-top: 0;
     padding-bottom: 1px;
     padding-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 430px;
+    margin: -34px -14px 0 85px;
+    padding-top: 0;
+    padding-bottom: 1px;
+    padding-right: 0;
+
+    // width: 430px;
+    // top: -33px;
+    // left: 5px;
+    // margin: 0;
   }
 }
 
@@ -91,6 +115,10 @@
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -11px;
   }
 }
 
@@ -156,6 +184,10 @@
     width: 100%;
     padding: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 58px;
+  }
 }
 
 .review-form__impression-block {
@@ -177,6 +209,10 @@
     display: flex;
     flex-direction: column;
     padding-top: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 67px;
   }
 }
 
@@ -202,6 +238,14 @@
     display: grid;
     grid-template-columns: repeat(2, 280px);
     gap: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    gap: 28px;
+    margin-left: 120px;
+    margin-right: 120px;
   }
 }
 
@@ -271,6 +315,12 @@ textarea {
     grid-template-columns: repeat(2, 224px);
     gap: 32px 16px;
   }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 170px);
+    gap: 64px;
+  }
 }
 
 .describe-impressions {
@@ -289,6 +339,10 @@ textarea {
     position: absolute;
     background: #e5e5e5;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 23px;
+  }
 }
 
 // РАДИОКНОПКИ
@@ -301,6 +355,11 @@ textarea {
 
   @media (min-width: @tablet-width) {
     left: 88px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 47px;
+    top: 30px;
   }
 }
 
@@ -321,6 +380,11 @@ textarea {
   @media (min-width: @tablet-width) {
     left: 3px;
     top: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 1px;
+    top: 13px;
   }
 }
 
@@ -402,5 +466,13 @@ textarea {
   @media (min-width: @tablet-width) {
     margin: 0;
     padding: 6px 0 0 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding-top: 9px;
+    padding-right: 1px;
+    padding-left: 97px;
+    padding-bottom: 49px;
   }
 }

@@ -41,7 +41,7 @@
       height: 72px;
       position: absolute;
       left: 0;
-      bottom: -5px;
+      bottom: -1px;
       display: block;
       background: url(../img/desktop-triangle.svg) center bottom no-repeat;
     }
@@ -53,14 +53,22 @@
   background-position: bottom center;
 
   @media (min-width: @tablet-width) {
-    height: 290px;
+    height: 347px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 359px;
   }
 }
 
 .hero__img {
   @media (min-width: @tablet-width) {
     width: 461px;
-    height: 350px;
+    height: 464px;
     padding-bottom: 183px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 54px;
   }
 }
