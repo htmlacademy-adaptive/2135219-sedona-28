@@ -1,0 +1,79 @@
+.button {
+  display: inline-block;
+  font-weight: 700;
+  line-height: 26px;
+  font-size: 21px;
+  color: #ffffff;
+  background-color: @background-color-blue;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button--submit {
+  text-align: center;
+  width: 280px;
+  height: 58px;
+  margin: 52px auto 3px auto;
+  display: block;
+  font-family: inherit;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    margin: 42px 384px 3px auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 384px;
+    margin: 42px 384px 3px 216px;
+  }
+}
+
+.popup__button {
+  text-align: center;
+  width: 180px;
+  height: 58px;
+  margin: 28px 70px 35px 70px;
+
+  @media (min-width: @tablet-width) {
+    width: 272px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 272px;
+  }
+}
+
+.popup__button-close {
+  text-align: center;
+  width: 280px;
+  height: 58px;
+  margin: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 272px;
+  }
+}
+
+.obligatory-field {
+  font-weight: 400;
+  line-height: 21px;
+  margin-left: 141px;
+  text-align: right;
+  text-transform: uppercase;
+  color: @text-description-black;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    left: 407px;
+    top: -39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 684px;
+  }
+}

@@ -1,4 +1,29 @@
 .main-header {
-  display: flex;
-  flex-wrap: wrap;
+  padding: 0 0 56px 0;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+.main-header__logo {
+  order: 2;
+  display: block;
+  position: absolute;
+  bottom: -37px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 180px;
+
+  @media (min-width: @tablet-width) {
+    bottom: auto;
+    top: 0;
+    z-index: 10;
+  }
+
+  @media (min-width: @desktop-width) {
+    z-index: 10;
+  }
 }

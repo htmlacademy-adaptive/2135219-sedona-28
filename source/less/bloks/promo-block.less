@@ -1,23 +1,76 @@
 .promo-block {
   background-color: #ffffff;
+  padding: 47px 20px 48px 20px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    padding: 40px 166px 55px 166px;
+    top: -1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 60px 382px 66px 383px;
+  }
 }
 
 .promo-block__header {
   color: #000000;
   text-transform: uppercase;
   text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  margin-top: -9px;
+  padding-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 71px;
+    left: 236px;
+    font-size: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    top: auto;
+    left: auto;
+    font-size: 30px;
+    margin-top: 0;
+  }
 }
 
 .promo-block__discription {
   color: @text-description-black;
   text-transform: uppercase;
   text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 0 0 0;
+  padding-top: 0;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 78px;
+    padding-bottom: 32px;
+
+    br {
+      display: inline;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 5px;
+    padding-bottom: 32px;
+  }
 }
 
 .promo-block__button {
+  display: inline-block;
   font-family: inherit;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 21px;
   line-height: 36px;
   background-color: #82b3d3;
   color: #ffffff;
@@ -25,4 +78,18 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  width: 284px;
+  padding: 10px;
+  margin-top: 28px;
+
+  @media (min-width: @tablet-width) {
+    width: 447px;
+    height: 58px;
+    padding: 12px 22px 15px 12px;
+    margin-top: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 14px 22px 15px 12px;
+  }
 }

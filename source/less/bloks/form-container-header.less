@@ -4,6 +4,18 @@
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 21px;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    padding-top: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 88px;
+    margin-bottom: 32px;
+  }
 }
 
 .form-container__discription {
@@ -13,4 +25,22 @@
   text-align: center;
   text-transform: uppercase;
   color: @text-description-black;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 166px;
+    padding-right: 166px;
+    padding-bottom: 0;
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 382px;
+    padding-right: 382px;
+  }
+}
+
+.form-container {
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }

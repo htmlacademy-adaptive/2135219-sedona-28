@@ -1,3 +1,43 @@
 .main-nav {
+  order: 1;
   display: flex;
+  position: relative;
+
+  &--opened {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    .main-nav__toggle {
+      display: block;
+      background: url(../img/icon-cross.svg) center center no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &--closed {
+    .site-list {
+      display: none;
+    }
+
+    .main-nav__toggle {
+      display: block;
+      background: url(../img/icon-menu.svg) center center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.main-nav__toggle {
+  display: none;
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  z-index: 2;
+
+  width: 23px;
+  height: 23px;
+  border: none;
 }

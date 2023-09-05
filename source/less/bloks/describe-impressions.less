@@ -4,6 +4,11 @@
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    margin-top: 54px;
+  }
 }
 
 .describe-impressions__title::placeholder {
@@ -11,4 +16,19 @@
   font-weight: 700;
   line-height: 26px;
   font-size: 18px;
+}
+
+.describe-impressions__message {
+  width: 279px;
+  padding: 16px;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    padding-top: 6px;
+    margin-top: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 768px;
+  }
 }
